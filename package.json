@@ -4,6 +4,7 @@
   "description": "A Vue.js project",
   "author": "Duncan Smith <duncanssmith@gmail.com>",
   "private": true,
+  "licence": "SEE LICENCE IN licence.txt",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
