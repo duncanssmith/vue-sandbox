@@ -4,9 +4,10 @@
     <h2>{{ title }}</h2>
     <ul>
       <li><cheese></cheese></li>
-      <li><fish></fish></li>
+      <li><fish v-on:incrementBy="incWithVal"></fish></li>
       <li><veg></veg></li>
     </ul>
+    <h1>{{ total }}</h1>
   </div>
 </template>
 
@@ -33,7 +34,8 @@ export default {
     return {
       title: '',
       store: 'Supermarket: ',
-      department: 'Main'
+      department: 'Main',
+      total: 0
     }
   },
 
@@ -44,6 +46,11 @@ export default {
   },
 
   methods: {
+    incWithval: function (toAdd) {
+      console.log("DUNCAN DEBUG 102938");
+      console.log("");
+      total += toAdd
+    }
 
   }
 }

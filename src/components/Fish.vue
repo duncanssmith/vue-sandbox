@@ -11,6 +11,11 @@
         <p>£{{product.price.toFixed(2)}} per kg</p>
       </li>
     </ul>
+
+          <button v-on:click="this.$emit('incrementBy', 5);">
+            Increment by 5 in parent 
+          </button>
+
   </div>
 </template>
 
